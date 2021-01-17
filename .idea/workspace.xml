@@ -36,7 +36,18 @@
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Go Test.TestNoBudgets in Edwardz43/tdd-accounting-golang">
+    <configuration name="TestNoBudgets in Edwardz43/tdd-accounting-golang" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="golang" />
+      <working_directory value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <kind value="PACKAGE" />
+      <package value="Edwardz43/tdd-accounting-golang" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <pattern value="^\QTestNoBudgets\E$" />
+      <method v="2" />
+    </configuration>
     <configuration name="accounting_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="golang" />
       <working_directory value="$PROJECT_DIR$" />
@@ -48,6 +59,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestNoBudgets in Edwardz43/tdd-accounting-golang" />
         <item itemvalue="Go Test.accounting_test.go" />
       </list>
     </recent_temporary>
@@ -68,22 +80,38 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="542" y="275" key="EnvironmentVariablesDialog/0.23.1280.777@0.23.1280.777" timestamp="1610867986280" />
-    <state width="1238" height="192" key="GridCell.Tab.0.bottom" timestamp="1610868318336">
+    <state width="1238" height="240" key="GridCell.Tab.0.bottom" timestamp="1610869016783">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1238" height="192" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1610868318336" />
-    <state width="1238" height="192" key="GridCell.Tab.0.center" timestamp="1610868318336">
+    <state width="1238" height="240" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1610869016783" />
+    <state width="1238" height="240" key="GridCell.Tab.0.center" timestamp="1610869016782">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1238" height="192" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1610868318336" />
-    <state width="1238" height="192" key="GridCell.Tab.0.left" timestamp="1610868318335">
+    <state width="1238" height="240" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1610869016782" />
+    <state width="1238" height="240" key="GridCell.Tab.0.left" timestamp="1610869016781">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1238" height="192" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1610868318335" />
-    <state width="1238" height="192" key="GridCell.Tab.0.right" timestamp="1610868318336">
+    <state width="1238" height="240" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1610869016781" />
+    <state width="1238" height="240" key="GridCell.Tab.0.right" timestamp="1610869016782">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1238" height="192" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1610868318336" />
+    <state width="1238" height="240" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1610869016782" />
+    <state width="1238" height="240" key="GridCell.Tab.1.bottom" timestamp="1610869017667">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state width="1238" height="240" key="GridCell.Tab.1.bottom/0.23.1280.777@0.23.1280.777" timestamp="1610869017667" />
+    <state width="1238" height="240" key="GridCell.Tab.1.center" timestamp="1610869017666">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state width="1238" height="240" key="GridCell.Tab.1.center/0.23.1280.777@0.23.1280.777" timestamp="1610869017666" />
+    <state width="1238" height="240" key="GridCell.Tab.1.left" timestamp="1610869017666">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state width="1238" height="240" key="GridCell.Tab.1.left/0.23.1280.777@0.23.1280.777" timestamp="1610869017666" />
+    <state width="1238" height="240" key="GridCell.Tab.1.right" timestamp="1610869017667">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state width="1238" height="240" key="GridCell.Tab.1.right/0.23.1280.777@0.23.1280.777" timestamp="1610869017667" />
     <state x="370" y="150" width="540" height="540" key="StructurePopup" timestamp="1610868143941">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
