@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="9f27d6df-dd59-43fb-9a2d-f54ab366845b" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
@@ -65,29 +68,29 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="542" y="275" key="EnvironmentVariablesDialog/0.23.1280.777@0.23.1280.777" timestamp="1610867986280" />
-    <state width="1238" height="193" key="GridCell.Tab.0.bottom" timestamp="1610868283015">
+    <state width="1238" height="192" key="GridCell.Tab.0.bottom" timestamp="1610868318336">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1238" height="193" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1610868283015" />
-    <state width="1238" height="193" key="GridCell.Tab.0.center" timestamp="1610868283014">
+    <state width="1238" height="192" key="GridCell.Tab.0.bottom/0.23.1280.777@0.23.1280.777" timestamp="1610868318336" />
+    <state width="1238" height="192" key="GridCell.Tab.0.center" timestamp="1610868318336">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1238" height="193" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1610868283014" />
-    <state width="1238" height="193" key="GridCell.Tab.0.left" timestamp="1610868283013">
+    <state width="1238" height="192" key="GridCell.Tab.0.center/0.23.1280.777@0.23.1280.777" timestamp="1610868318336" />
+    <state width="1238" height="192" key="GridCell.Tab.0.left" timestamp="1610868318335">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1238" height="193" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1610868283013" />
-    <state width="1238" height="193" key="GridCell.Tab.0.right" timestamp="1610868283014">
+    <state width="1238" height="192" key="GridCell.Tab.0.left/0.23.1280.777@0.23.1280.777" timestamp="1610868318335" />
+    <state width="1238" height="192" key="GridCell.Tab.0.right" timestamp="1610868318336">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state width="1238" height="193" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1610868283014" />
+    <state width="1238" height="192" key="GridCell.Tab.0.right/0.23.1280.777@0.23.1280.777" timestamp="1610868318336" />
     <state x="370" y="150" width="540" height="540" key="StructurePopup" timestamp="1610868143941">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="370" y="150" width="540" height="540" key="StructurePopup/0.23.1280.777@0.23.1280.777" timestamp="1610868143941" />
-    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1610867975094">
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1610868315820">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
-    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.23.1280.777@0.23.1280.777" timestamp="1610867975094" />
+    <state x="305" y="124" width="670" height="676" key="search.everywhere.popup/0.23.1280.777@0.23.1280.777" timestamp="1610868315820" />
   </component>
 </project>
