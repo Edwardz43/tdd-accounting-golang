@@ -13,8 +13,8 @@ func beforeEach() {
 }
 
 func createPeriod(startStr string, endStr string) (time.Time, time.Time) {
-	start, _ := time.Parse("2006-01-02", startStr)
-	end, _ := time.Parse("2006-01-02", endStr)
+	start, _ := time.Parse("20060102", startStr)
+	end, _ := time.Parse("20060102", endStr)
 	return start, end
 }
 
@@ -24,7 +24,7 @@ func getBudgets(budgets []accounting.Budget) {
 
 func TestNoBudgets(t *testing.T) {
 	beforeEach()
-	start, end := createPeriod("2021-04-02", "2021-04-02")
+	start, end := createPeriod("20210402", "20210402")
 	assert.Equal(t, .0, account.TotalAmount(start, end))
 }
 
@@ -33,7 +33,7 @@ func TestPeriodInWholeMonth(t *testing.T) {
 	var budgets []accounting.Budget
 	budgets = append(budgets, accounting.Budget{YearMonth: "202104", Amount: 30})
 	getBudgets(budgets)
-	start, end := createPeriod("2021-04-01", "2021-04-30")
+	start, end := createPeriod("20210401", "20210430")
 	assert.Equal(t, 30.0, account.TotalAmount(start, end))
 }
 
@@ -42,7 +42,7 @@ func TestPeriodInsideBudgetMonth(t *testing.T) {
 	var budgets []accounting.Budget
 	budgets = append(budgets, accounting.Budget{YearMonth: "202104", Amount: 30})
 	getBudgets(budgets)
-	start, end := createPeriod("2021-04-02", "2021-04-02")
+	start, end := createPeriod("20210402", "20210402")
 	assert.Equal(t, 1.0, account.TotalAmount(start, end))
 }
 
@@ -51,6 +51,6 @@ func TestPeriodNoOverlapBudgetFirstDay(t *testing.T) {
 	var budgets []accounting.Budget
 	budgets = append(budgets, accounting.Budget{YearMonth: "202104", Amount: 30})
 	getBudgets(budgets)
-	start, end := createPeriod("2021-03-30", "2021-03-30")
+	start, end := createPeriod("20210330", "20210330")
 	assert.Equal(t, 0.0, account.TotalAmount(start, end))
 }
