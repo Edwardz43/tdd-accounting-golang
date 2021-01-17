@@ -6,6 +6,11 @@ import (
 	"testing"
 	"time"
 )
+var account *accounting.Accounting
+
+func beforeEach() {
+	account = new(accounting.Accounting)
+}
 
 func createPeriod(startStr string, endStr string) (time.Time, time.Time) {
 	start, _ := time.Parse("2006-01-02", startStr)
@@ -14,7 +19,7 @@ func createPeriod(startStr string, endStr string) (time.Time, time.Time) {
 }
 
 func TestNoBudgets(t *testing.T) {
-	account := new(accounting.Accounting)
+	beforeEach()
 	start, end := createPeriod("2021-04-02", "2021-04-02")
 	assert.Equal(t, .0, account.TotalAmount(start, end))
 }
