@@ -15,8 +15,7 @@ func (a *Accounting) TotalAmount(start time.Time, end time.Time) float64 {
 		if end.Before(a.firstDay(budgets)) {
 			return 0
 		}
-		budgetLastDay, _ := time.Parse("200601", budgets[0].YearMonth)
-		budgetLastDay = now.With(budgetLastDay).EndOfMonth()
+		budgetLastDay := a.lastDay(budgets)
 		if start.After(budgetLastDay) {
 			return 0
 		}
@@ -24,6 +23,11 @@ func (a *Accounting) TotalAmount(start time.Time, end time.Time) float64 {
 		return days
 	}
 	return 0
+}
+
+func (a *Accounting) lastDay(budgets []Budget) time.Time {
+	budgetLastDate, _ := time.Parse("200601", budgets[0].YearMonth)
+	return now.With(budgetLastDate).EndOfMonth()
 }
 
 func (a *Accounting) firstDay(budgets []Budget) time.Time {
