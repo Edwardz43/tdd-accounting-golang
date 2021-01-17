@@ -26,7 +26,9 @@ func TestNoBudgets(t *testing.T) {
 
 func TestPeriodInWholeMonth(t *testing.T) {
 	beforeEach()
-	//account.
+	var budgets []accounting.Budget
+	budgets = append(budgets, accounting.Budget{YearMonth:"202104", Amount: 300})
+	account.GetBudgets(budgets)
 	start, end := createPeriod("2021-04-01", "2021-04-30")
 	assert.Equal(t, 30.0, account.TotalAmount(start, end))
 }
