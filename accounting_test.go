@@ -1,18 +1,11 @@
-package account_test
+package accounting_test
 
 import (
+	accounting "Edwardz43/tdd-accounting-golang"
 	"github.com/stretchr/testify/assert"
 	"testing"
 	"time"
 )
-
-type Accounting struct {
-
-}
-
-func (a Accounting) totalAmount(start time.Time, end time.Time) float64 {
-	return 0
-}
 
 func createPeriod(startStr string, endStr string) (time.Time, time.Time) {
 	start, _ := time.Parse("2006-01-02", startStr)
@@ -21,8 +14,8 @@ func createPeriod(startStr string, endStr string) (time.Time, time.Time) {
 }
 
 func TestNoBudgets(t *testing.T) {
-	account := new(Accounting)
+	account := new(accounting.Accounting)
 	start, end := createPeriod("2021-04-02", "2021-04-02")
-	assert.Equal(t, .0, account.totalAmount(start, end))
+	assert.Equal(t, .0, account.TotalAmount(start, end))
 }
 

@@ -36,7 +36,22 @@
     <property name="go.tried.to.enable.integration.vgo.integrator" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
   </component>
+  <component name="RecentsManager">
+    <key name="GoMoveDeclarationDialog.RECENT_KEY">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="RunManager" selected="Go Test.TestNoBudgets in Edwardz43/tdd-accounting-golang">
+    <configuration default="true" type="GoApplicationRunConfiguration" factoryName="Go Application">
+      <module name="golang" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$" />
+      <package value="Edwardz43/tdd-accounting-golang" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
     <configuration name="TestNoBudgets in Edwardz43/tdd-accounting-golang" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
       <module name="golang" />
       <working_directory value="$PROJECT_DIR$" />
@@ -46,6 +61,17 @@
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$" />
       <pattern value="^\QTestNoBudgets\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="GoTestRunConfiguration" factoryName="Go Test">
+      <module name="golang" />
+      <working_directory value="$PROJECT_DIR$" />
+      <go_parameters value="-i" />
+      <framework value="gotest" />
+      <kind value="DIRECTORY" />
+      <package value="Edwardz43/tdd-accounting-golang" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
     <configuration name="accounting_test.go" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -116,6 +142,10 @@
       <screen x="0" y="23" width="1280" height="777" />
     </state>
     <state x="370" y="150" width="540" height="540" key="StructurePopup/0.23.1280.777@0.23.1280.777" timestamp="1610868143941" />
+    <state x="403" y="195" key="com.goide.refactor.move.GoMoveDeclarationDialog" timestamp="1610869481262">
+      <screen x="0" y="23" width="1280" height="777" />
+    </state>
+    <state x="403" y="195" key="com.goide.refactor.move.GoMoveDeclarationDialog/0.23.1280.777@0.23.1280.777" timestamp="1610869481262" />
     <state x="305" y="124" width="670" height="676" key="search.everywhere.popup" timestamp="1610868315820">
       <screen x="0" y="23" width="1280" height="777" />
     </state>
