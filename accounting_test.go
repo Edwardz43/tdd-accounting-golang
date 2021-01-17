@@ -24,11 +24,6 @@ func TestNoBudgets(t *testing.T) {
 	assert.Equal(t, .0, account.TotalAmount(start, end))
 }
 
-type Budget struct {
-	YearMonth string
-	Amount int
-}
-
 func TestPeriodInWholeMonth(t *testing.T) {
 	beforeEach()
 	//account.
