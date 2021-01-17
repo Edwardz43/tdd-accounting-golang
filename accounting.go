@@ -1,6 +1,7 @@
 package accounting
 
 import (
+	"github.com/jinzhu/now"
 	"time"
 )
 
@@ -12,6 +13,11 @@ func (a *Accounting) TotalAmount(start time.Time, end time.Time) float64 {
 	budgets := a.BudgetRepo.GetAll()
 	if len(budgets) > 0 {
 		if end.Before(a.firstDay(budgets)) {
+			return 0
+		}
+		budgetLastDay, _ := time.Parse("200601", budgets[0].YearMonth)
+		budgetLastDay = now.With(budgetLastDay).EndOfMonth()
+		if start.After(budgetLastDay) {
 			return 0
 		}
 		days := end.Sub(start).Hours()/24 + 1
