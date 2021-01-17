@@ -18,6 +18,10 @@ func createPeriod(startStr string, endStr string) (time.Time, time.Time) {
 	return start, end
 }
 
+func getBudgets(budgets []accounting.Budget) {
+	account.GetBudgets(budgets)
+}
+
 func TestNoBudgets(t *testing.T) {
 	beforeEach()
 	start, end := createPeriod("2021-04-02", "2021-04-02")
@@ -27,8 +31,8 @@ func TestNoBudgets(t *testing.T) {
 func TestPeriodInWholeMonth(t *testing.T) {
 	beforeEach()
 	var budgets []accounting.Budget
-	budgets = append(budgets, accounting.Budget{YearMonth:"202104", Amount: 300})
-	account.GetBudgets(budgets)
+	budgets = append(budgets, accounting.Budget{YearMonth: "202104", Amount: 300})
+	getBudgets(budgets)
 	start, end := createPeriod("2021-04-01", "2021-04-30")
 	assert.Equal(t, 30.0, account.TotalAmount(start, end))
 }
