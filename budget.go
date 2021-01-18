@@ -29,5 +29,5 @@ func (b *Budget) firstDay() time.Time {
 
 func (b *Budget) lastDay() time.Time {
 	budgetLastDate, _ := time.Parse("200601", b.YearMonth)
-	return now.With(budgetLastDate).EndOfMonth()
+	return now.With(budgetLastDate).EndOfMonth().Add(time.Hour * -24).Round(time.Hour)
 }
