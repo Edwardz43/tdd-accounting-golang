@@ -1,6 +1,9 @@
 package accounting
 
-import "time"
+import (
+	"github.com/jinzhu/now"
+	"time"
+)
 
 type BudgetRepo struct {
 	budgets []Budget
@@ -22,4 +25,9 @@ type Budget struct {
 func (b *Budget) firstDay() time.Time {
 	budgetFirstDay, _ := time.Parse("200601", b.YearMonth)
 	return budgetFirstDay
+}
+
+func (b *Budget) lastDay() time.Time {
+	budgetLastDate, _ := time.Parse("200601", b.YearMonth)
+	return now.With(budgetLastDate).EndOfMonth()
 }
