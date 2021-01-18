@@ -10,10 +10,10 @@ type Accounting struct {
 }
 
 func (a *Accounting) TotalAmount(start time.Time, end time.Time) float64 {
-	budgets := a.BudgetRepo.GetAll()
+	budgets := a.GetAll()
 	if len(budgets) > 0 {
 		budget := budgets[0]
-		firstDay := a.firstDay(budget)
+		firstDay := budget.firstDay()
 		lastDay := a.lastDay(budget)
 		if start.After(lastDay) || end.Before(firstDay) {
 			return 0
@@ -34,7 +34,7 @@ func (a *Accounting) lastDay(budgets Budget) time.Time {
 	return now.With(budgetLastDate).EndOfMonth()
 }
 
-func (a *Accounting) firstDay(budgets Budget) time.Time {
-	budgetFirstDay, _ := time.Parse("200601", budgets.YearMonth)
-	return budgetFirstDay
-}
+//func (a *Accounting) firstDay(budgets Budget) time.Time {
+//	budgetFirstDay, _ := time.Parse("200601", budgets.YearMonth)
+//	return budgetFirstDay
+//}
