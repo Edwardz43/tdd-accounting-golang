@@ -21,7 +21,14 @@ func (a *Accounting) TotalAmount(start time.Time, end time.Time) float64 {
 		} else {
 			overlappingStart = budget.firstDay()
 		}
-		return end.Sub(overlappingStart).Hours()/24 + 1
+
+		var overlappingEnd time.Time
+		if end.Before(budget.lastDay()) {
+			overlappingEnd = end
+		} else {
+			overlappingEnd = budget.lastDay()
+		}
+		return overlappingEnd.Sub(overlappingStart).Hours()/24 + 1
 	}
 	return 0
 }
