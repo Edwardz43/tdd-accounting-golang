@@ -18,7 +18,13 @@ func (a *Accounting) TotalAmount(start time.Time, end time.Time) float64 {
 		if start.After(lastDay) || end.Before(firstDay) {
 			return 0
 		}
-		return end.Sub(start).Hours()/24 + 1
+		var overlappingStart time.Time
+		if start.After(firstDay) {
+			overlappingStart = start
+		} else {
+			overlappingStart = firstDay
+		}
+		return end.Sub(overlappingStart).Hours()/24 + 1
 	}
 	return 0
 }

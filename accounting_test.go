@@ -63,3 +63,12 @@ func TestPeriodNoOverlapBudgetLastDay(t *testing.T) {
 	start, end := createPeriod("20210503", "20210503")
 	assert.Equal(t, 0.0, account.TotalAmount(start, end))
 }
+
+func TestPeriodOverlapBudgetFirstDay(t *testing.T) {
+	beforeEach()
+	var budgets []accounting.Budget
+	budgets = append(budgets, accounting.Budget{YearMonth: "202104", Amount: 30})
+	getBudgets(budgets)
+	start, end := createPeriod("20210330", "20210403")
+	assert.Equal(t, 3.0, account.TotalAmount(start, end))
+}
